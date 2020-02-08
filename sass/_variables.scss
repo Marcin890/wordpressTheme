@@ -1,0 +1,39 @@
+// COLORS
+
+// text
+$color-text-main: #000000;
+$color-text-invert: #ffffff;
+
+// background
+$color-bg-main: #929d82;
+$color-bg-light: rgb(230, 230, 230);
+$color-bg-dark: rgb(60, 60, 60);
+$color-bg-selection: rgb(230, 230, 230);
+
+// Fonts
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Lora", serif;
+
+// Font-size
+$font-size-base: 1.6rem;
+$font-size-s: 1.2rem;
+$font-size-m: 1.6rem;
+$font-size-l: 2.6rem;
+$font-size-xl: 4rem;
+$font-size-xxl: 6rem;
+
+// Space
+$xs-space: 10px;
+$s-space: 20px;
+$m-space: 40px;
+$l-space: 70px;
+$xl-space: 140px;
+
+// Radius
+$border-radius: 5px;
+
+// Transition
+$transition: all 0.7s ease;
+
+// Border
+$border: 1px solid rgb(230, 230, 230);

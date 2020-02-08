@@ -1,0 +1,40 @@
+/*
+
+Theme Name: Bieszczady
+Description: Motym dla portalu o tematyce górskiej
+Author: Marcin Kośka
+Version: 0.5
+
+*/
+// Change Bootstrap Variables
+@import "sass/bootstrap-variables";
+
+// Boostrap
+@import "bootstrap/bootstrap-4.0.0/scss/bootstrap";
+
+// Variables
+@import "sass/variables";
+
+// Typography
+@import "sass/typography";
+
+// Base
+@import "sass/base";
+
+// Navigation
+@import "sass/navigation";
+
+// Components
+@import "sass/site/header";
+@import "sass/site/comments";
+@import "sass/site/footer";
+@import "sass/site/components";
+
+// Post
+@import "sass/post/post";
+@import "sass/post/city";
+@import "sass/post/author";
+@import "sass/post/tag";
+
+// Widgets
+@import "sass/widgets";

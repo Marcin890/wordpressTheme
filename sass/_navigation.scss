@@ -1,0 +1,89 @@
+// Links
+a {
+  text-decoration: none;
+  color: $color-text-main;
+  transition: $transition;
+  &:hover {
+    text-decoration: none;
+    color: $color-bg-main;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.btn-wrapper {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: $m-space;
+}
+.btn-link {
+  text-align: center;
+  color: $color-text-invert;
+  border-radius: $border-radius;
+  background: $color-bg-main;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: $s-space $m-space;
+  &:hover {
+    background: darken($color-bg-main, 20%);
+    color: darken($color-text-invert, 20%);
+    text-decoration: none;
+  }
+}
+// Main nav
+.nav {
+  display: flex;
+  justify-content: center;
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0 $m-space;
+  }
+}
+
+// Mobile menu
+.navbar-toggler {
+  background: $color-bg-light;
+  padding: 15px;
+  margin-bottom: $s-space;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+// Pagination
+.pagination {
+  .page-numbers {
+    background: $color-bg-main;
+    padding: 10px;
+    color: white;
+    &:hover {
+      background: darken($color-bg-main, 20%);
+    }
+  }
+  .current {
+    color: black;
+    background: $color-bg-light;
+    &:hover {
+      background: darken($color-bg-light, 20%);
+    }
+  }
+}
+
+// Social
+
+i.fab {
+  color: $color-bg-main;
+  padding: 2px;
+  &:hover {
+    color: $color-bg-dark;
+  }
+}
+.social {
+  margin-top: $m-space;
+}

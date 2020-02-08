@@ -1,0 +1,91 @@
+.post-category {
+  color: $color-text-main;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: $s-space;
+  padding-top: $s-space;
+}
+
+.post-category a {
+  color: $color-text-main;
+}
+
+.post-date {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: $s-space;
+}
+
+.post-title {
+  margin-bottom: $s-space;
+}
+
+.post-text {
+  margin-bottom: calc(#{$s-space}* 2);
+}
+
+.post-wrapper {
+  margin-bottom: $l-space;
+  min-height: 400px;
+}
+
+.post-image {
+  img {
+    width: 100%;
+    height: auto;
+    transition: $transition;
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+}
+.post-info {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: $m-space;
+  &:hover {
+    background: darken($color-bg-main, 20%);
+    transition: $transition;
+  }
+  a {
+    color: $color-text-invert;
+  }
+}
+
+.post-header {
+  background: $color-bg-light;
+  padding-top: $m-space;
+  padding-bottom: $m-space;
+  margin-bottom: $m-space;
+}
+
+// Single Post
+.single {
+  article {
+    h2 {
+      text-align: left;
+      margin-top: $m-space;
+      margin-bottom: $s-space;
+      padding-bottom: 10px;
+      border-bottom: $border;
+    }
+  }
+}
+// Header
+.logo-container {
+  margin: $l-space 0;
+  border-bottom: $border;
+}
+
+.site-title {
+  font-family: $font-primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: $l-space;
+}

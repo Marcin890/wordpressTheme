@@ -1,0 +1,18 @@
+// Cities
+.cities-wrapper {
+  background: $color-bg-main;
+  min-height: 350px;
+}
+
+.cities-card {
+  background: $color-bg-light;
+  padding: $s-space 15px;
+  h2 {
+    margin: $m-space 0;
+  }
+}
+.cities-stats {
+  list-style-type: none;
+  margin-top: $s-space;
+  padding: 0px;
+}

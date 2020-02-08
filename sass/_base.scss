@@ -1,0 +1,34 @@
+// Elements
+html {
+  box-sizing: border-box;
+}
+
+// Selection
+::-moz-selection {
+  background-color: $color-bg-selection;
+}
+
+::selection {
+  background-color: $color-bg-selection;
+}
+
+// Sections
+section {
+  margin-bottom: $l-space;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-text-main;
+  text-align: center;
+}
+
+// Images
+img {
+  max-width: 100%;
+}
