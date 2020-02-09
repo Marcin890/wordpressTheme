@@ -9217,6 +9217,18 @@ i.fab:hover {
   border-top: 20px solid #929d82;
 }
 
+.logo-container {
+  margin: 70px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.site-title {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
 footer {
   color: #ffffff;
   background: #3c3c3c;
@@ -9247,29 +9259,9 @@ footer {
   margin-bottom: 20px;
 }
 
-.post-title {
-  margin-bottom: 20px;
-}
-
-.post-text {
-  margin-bottom: calc(20px* 2);
-}
-
 .post-wrapper {
   margin-bottom: 70px;
   min-height: 400px;
-}
-
-.post-image img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.post-image img:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
 }
 
 .post-info {
@@ -9288,11 +9280,24 @@ footer {
   color: #ffffff;
 }
 
-.post-header {
-  background: #e6e6e6;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+.post-title {
+  margin-bottom: 20px;
+}
+
+.post-text {
+  margin-bottom: calc(20px* 2);
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.post-image img:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .single article h2 {
@@ -9303,16 +9308,11 @@ footer {
   border-bottom: 1px solid #e6e6e6;
 }
 
-.logo-container {
-  margin: 70px 0;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.site-title {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 70px;
+.post-header {
+  background: #e6e6e6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .cities-wrapper {

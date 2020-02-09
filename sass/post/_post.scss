@@ -1,7 +1,8 @@
+// category
 .post-category {
   color: $color-text-main;
   text-align: center;
-  font-size: 1rem;
+  font-size: $font-size-xs;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -13,38 +14,22 @@
   color: $color-text-main;
 }
 
+// date
 .post-date {
   text-align: center;
-  font-size: 1rem;
+  font-size: $font-size-xs;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: $s-space;
 }
 
-.post-title {
-  margin-bottom: $s-space;
-}
-
-.post-text {
-  margin-bottom: calc(#{$s-space}* 2);
-}
-
+// wrapper
 .post-wrapper {
   margin-bottom: $l-space;
   min-height: 400px;
 }
 
-.post-image {
-  img {
-    width: 100%;
-    height: auto;
-    transition: $transition;
-    &:hover {
-      filter: brightness(0.7);
-    }
-  }
-}
 .post-info {
   padding-left: 10px;
   padding-right: 10px;
@@ -58,11 +43,26 @@
   }
 }
 
-.post-header {
-  background: $color-bg-light;
-  padding-top: $m-space;
-  padding-bottom: $m-space;
-  margin-bottom: $m-space;
+// Text
+.post-title {
+  margin-bottom: $s-space;
+}
+
+.post-text {
+  margin-bottom: calc(#{$s-space}* 2);
+}
+
+// image
+
+.post-image {
+  img {
+    width: 100%;
+    height: auto;
+    transition: $transition;
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
 }
 
 // Single Post
@@ -77,15 +77,11 @@
     }
   }
 }
-// Header
-.logo-container {
-  margin: $l-space 0;
-  border-bottom: $border;
-}
 
-.site-title {
-  font-family: $font-primary;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: $l-space;
+// header
+.post-header {
+  background: $color-bg-light;
+  padding-top: $m-space;
+  padding-bottom: $m-space;
+  margin-bottom: $m-space;
 }

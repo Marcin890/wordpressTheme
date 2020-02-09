@@ -2,3 +2,14 @@
   margin-bottom: $l-space;
   border-top: 20px solid $color-bg-main;
 }
+.logo-container {
+  margin: $l-space 0;
+  border-bottom: $border;
+}
+
+.site-title {
+  font-family: $font-primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: $l-space;
+}
