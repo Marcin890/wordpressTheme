@@ -7,23 +7,26 @@
                 <div class="archive-section">
                     <div class="container">
                         <div class="row">
-
-                            <?php while ( have_posts() ) :  the_post();
-                                get_template_part('content/cities');
-
-
-                            endwhile;
-                            
-                         ?>
+                            <?php
+                                if ( have_posts() ) {
+                                    while ( have_posts() ) :  the_post();
+                                        get_template_part('content/cities');
+                                    endwhile; 
+                                    bieszczady_the_posts_navigation();
+                                } else {
+                                    get_template_part('content/content-none');
+                                } 
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"><?php get_template_part( 'content/widget' )?></div>
+            <div class="col-md-3">
+                <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+                <?php get_template_part( 'content/widget' )?>
+                <?php endif; ?>
+            </div>
         </div>
-        <?php  bieszczady_the_posts_navigation() ?>
     </div>
 </section>
-
-
 <?php get_footer(); ?>

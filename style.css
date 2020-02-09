@@ -9114,6 +9114,12 @@ img {
   max-width: 100%;
 }
 
+ol,
+ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 a {
   text-decoration: none;
   color: #000000;

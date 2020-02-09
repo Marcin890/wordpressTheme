@@ -20,13 +20,14 @@
                                     $loop->the_post();
                                     $do_not_duplicate = $post->ID;
 			                    	 get_template_part('content/featured');}
-		                        } else { }  
+		                        } else {
+                                    get_template_part('content/content-none');
+                                 }  
                                   ?>
-
-
                         </div>
                     </div>
                 </section>
+                <!-- END featured-section -->
                 <!-- news-section -->
                 <section class="news-section">
                     <div class="container">
@@ -43,10 +44,10 @@
                                     $loop->the_post();
                                     if( $post->ID == $do_not_duplicate ) continue;
 			                    	 get_template_part('content/news');}
-		                        } else { }  
+		                        } else { 
+                                    get_template_part('content/content-none');
+                                }  
                                   ?>
-
-
                         </div>
                     </div>
                 </section>
@@ -68,19 +69,22 @@
                                     $loop->the_post();
                                     if( $post->ID == $do_not_duplicate ) continue;
 			                    	 get_template_part('content/cities');}
-		                        } else { }  
+		                        } else {
+                                    get_template_part('content/content-none');
+                                 }  
                                   ?>
-
-
                         </div>
                     </div>
                 </section>
                 <!-- END of news-section -->
-
             </div>
+            <!-- Sidebar -->
             <div class="col-md-3">
+                <?php if ( is_active_sidebar( 'footer' ) ) : ?>
                 <?php get_template_part( 'content/widget' )?>
+                <?php endif; ?>
             </div>
+            <!-- END Sidebar -->
         </div>
     </div>
 </section>

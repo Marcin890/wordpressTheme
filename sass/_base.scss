@@ -32,3 +32,11 @@ h6 {
 img {
   max-width: 100%;
 }
+
+// Lists
+
+ol,
+ul {
+  list-style-type: none;
+  margin-left: 0;
+}
