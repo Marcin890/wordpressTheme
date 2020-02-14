@@ -1,5 +1,5 @@
 <?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-<nav class="navbar navbar-expand-md navbar-light " role="navigation">
+<nav class="navbar navbar-expand-md navbar-light " role="navigation" id="main-menu">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
             aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">

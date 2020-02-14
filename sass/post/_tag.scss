@@ -2,13 +2,19 @@
   margin-top: $s-space;
 }
 
-.tag-list li {
-  list-style-type: none;
-  display: inline;
-}
-.tag-list li a {
-  background: $color-bg-main;
-  color: white;
-  padding: 8px 12px;
-  margin: 5px;
+.tag-list {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    display: inline;
+    a {
+      background: $color-bg-main;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px;
+      &:hover {
+        background: $color-bg-dark;
+      }
+    }
+  }
 }

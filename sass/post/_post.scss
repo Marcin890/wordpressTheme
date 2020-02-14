@@ -10,10 +10,6 @@
   padding-top: $s-space;
 }
 
-.post-category a {
-  color: $color-text-main;
-}
-
 // date
 .post-date {
   text-align: center;
@@ -34,12 +30,11 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: $m-space;
-  &:hover {
-    background: darken($color-bg-main, 20%);
-    transition: $transition;
-  }
   a {
     color: $color-text-invert;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

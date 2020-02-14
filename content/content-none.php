@@ -1,4 +1,5 @@
 <div class="container">
-    <p>Niestety, nie znaleźliśmy takiego postu</p>
-    <?php get_search_form(); ?>
+    <h2>Przykro nam, wyszukiwane artykuły nie istnieją</h2>
+    <p class="text-center">Spróbuj jeszcze raz</p>
+    <div class="text-center"><?php get_search_form(); ?></div>
 </div>

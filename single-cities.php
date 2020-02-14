@@ -27,9 +27,11 @@
                         <?php the_post_thumbnail('large'); ?>
                     </div>
                     <ul class="cities-stats">
-                        <li>Liczba ludności: <?php echo get_post_meta($post->ID, 'population', true); ?></li>
-                        <li>Kod pocztowy: <?php echo get_post_meta($post->ID, 'zip-code', true); ?></li>
-                        <li>Wysokość: <?php echo get_post_meta($post->ID, 'altitude', true); ?></li>
+                        <li><strong>Liczba ludności:</strong>
+                            <?php echo get_post_meta($post->ID, 'population', true); ?></li>
+                        <li><strong>Kod pocztowy:</strong> <?php echo get_post_meta($post->ID, 'zip-code', true); ?>
+                        </li>
+                        <li><strong>Wysokość:</strong> <?php echo get_post_meta($post->ID, 'altitude', true); ?></li>
                     </ul>
                 </div>
             </div>

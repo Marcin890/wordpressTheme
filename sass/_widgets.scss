@@ -1,5 +1,13 @@
-.widget ul {
-  list-style-type: none;
+.widget {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  h2 {
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: $s-space;
+  }
 }
 
 .widget-area {

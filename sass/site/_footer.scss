@@ -2,4 +2,20 @@ footer {
   color: $color-text-invert;
   background: $color-bg-dark;
   padding: $l-space;
+  h3 {
+    text-align: left;
+    a {
+      color: $color-text-invert;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+  li {
+    a {
+      color: $color-text-invert;
+      &:hover {
+        color: darken($color-text-invert, 20%);
+      }
+    }
+  }
 }

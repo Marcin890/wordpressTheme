@@ -13,6 +13,7 @@
     <!-- css stylesheets -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
     <?php wp_head(); ?>
 </head>
 

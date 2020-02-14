@@ -41,7 +41,7 @@ a {
     list-style-type: none;
     text-transform: uppercase;
     font-size: 1.6rem;
-    padding: 0 $m-space;
+    padding-right: $m-space;
   }
 }
 
@@ -86,4 +86,11 @@ i.fab {
 }
 .social {
   margin-top: $m-space;
+}
+
+// Sticky menu
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

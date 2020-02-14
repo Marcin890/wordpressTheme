@@ -40,3 +40,19 @@ ul {
   list-style-type: none;
   margin-left: 0;
 }
+
+// Forms
+input {
+  border: $border;
+  border-radius: $border-radius;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background: $color-bg-main;
+  color: $color-text-invert;
+  border: none;
+  &:hover {
+    background: darken($color-bg-main, 20%);
+  }
+}

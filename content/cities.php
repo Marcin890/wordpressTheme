@@ -2,9 +2,7 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class('cities-wrapper'); ?>>
         <div class="post-image">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
-
         </div>
-
         <div class="post-info">
             <p class="post-category text-white"><?php getPostCategories();?></p>
             <h3 class="post-title"><a class="post-link text-white"

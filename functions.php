@@ -7,6 +7,11 @@ function bootstrap_enqueue_scripts() {
   add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_scripts');
 
 //-----  ADDITIONAL
+// Theme URL
+if(!defined('BIESZCZADY_URL')) {
+	define('BIESZCZADY_URL', WP_CONTENT_URL.'/themes/'.get_template().'/');
+}
+
 // Enable support for Post Thumbnails on posts and pages.
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 415, 114 );
@@ -191,7 +196,7 @@ function bieszczady_menu() {
         'theme_location'    => 'menu-1',
         'depth'             => 2,
         'container'         => 'div',
-        'container_class'   => 'collapse navbar-collapse justify-content-center',
+        'container_class'   => 'collapse navbar-collapse',
         'container_id'      => 'bs-example-navbar-collapse-1',
         'menu_class'        => 'nav navbar-nav',
         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -209,5 +214,6 @@ function footer_menu() {
         )
     );
 }
+
 
 ?>
