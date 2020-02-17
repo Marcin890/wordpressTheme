@@ -12,9 +12,7 @@ if(!defined('BIESZCZADY_URL')) {
 	define('BIESZCZADY_URL', WP_CONTENT_URL.'/themes/'.get_template().'/');
 }
 
-// Enable support for Post Thumbnails on posts and pages.
-add_theme_support('post-thumbnails');
-set_post_thumbnail_size( 415, 114 );
+
 
 // Clip text
 function the_excerpt_max_charlength($charlength) {
@@ -43,6 +41,14 @@ function cutText($text, $maxLength){
 function currentYear(){
     return date('Y');
 }
+
+//------ IMAGE SIZE
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size( 415, 114 );
+
+add_image_size( 'small', 270, 180, true );
+add_image_size( 'medium', 530, 350, true );
+add_image_size( 'large', 840, 560, true );
 
 //----- POSTS
 // Register post type

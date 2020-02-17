@@ -80,7 +80,7 @@
             </div>
             <!-- Sidebar -->
             <div class="col-md-3">
-                <?php if ( is_active_sidebar( 'footer' ) ) : ?>
+                <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
                 <?php get_template_part( 'content/widget' )?>
                 <?php endif; ?>
             </div>

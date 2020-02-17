@@ -9430,7 +9430,28 @@ footer li a:hover {
   margin-bottom: 20px;
 }
 
+.widget h3 {
+  margin-top: 5px;
+}
+
 .widget-area {
   margin-left: 10px;
+}
+
+.error {
+  text-align: center;
+}
+
+.error-code {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.error-message {
+  text-align: center;
+}
+
+.error- link {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

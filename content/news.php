@@ -1,7 +1,7 @@
 <div class="col-md-6">
     <article id="post-<?php the_ID(); ?>" <?php post_class('post-wrapper'); ?>>
         <div class="post-image">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
 
         </div>
         <p class="post-category"><?php getPostCategories();?></p>
