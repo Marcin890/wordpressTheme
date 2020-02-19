@@ -4,14 +4,16 @@
 
 .error-code {
     text-align: center;
+    font-size: 80px;
+}
+
+.error-message{
+    text-align: center;
+    margin-top: $m-space;
     font-size: $font-size-xl;
 }
 
-.error-message {
+.error-link {
     text-align: center;
-
-}
-
-.error- link {
-    text-align: center;
+    margin: $m-space 0;
 }

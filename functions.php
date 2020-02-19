@@ -221,5 +221,41 @@ function footer_menu() {
     );
 }
 
+// Comments
+function bieszczady_comment($comment, $args, $depth) {
+    $GLOBALS['comment'] = $comment;
+    
+    $tag = $args['style'];
+?>
+	<!-- Echo tag define in style in comments.php(div) -->
+	<!-- Add class parent when post has child -->
+    <<?php echo $tag ?> <?php comment_class(empty($args['has_children']) ? '' : 'parent') ?> id="li-comment-<?php comment_ID() ?>">
+        <!-- Single comment -->
+        <div id="div-comment-<?php comment_ID(); ?>" class="inner">
+            <!-- Get avatar -->
+           
+                          
+            <div class="comments-meta">
+                <div class="comments-avatar"><?php echo get_avatar($comment, $args[avatar_size]); ?> </div>
+                <p class="comments-author"><?php echo get_comment_author_link(); ?>
+                    <span class="comments-time">
+                    <?php echo get_comment_date() . ' ' . get_comment_time() ?>
+                    </span>   
+                </p>    
+                
+                <p class="comments-answear"><?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
+                      
+                
+                
+            </div>
+            <?php comment_text(); ?>
+            <!-- check if the comment is modified-->
+            <?php if($comment->comment_approved == '0') : ?>
+                <div class="comment-awaiting-moderation">Twój komentarz oczekuje na moderację!</div>
+            <?php endif; ?>
+        </div>
+<?php
+}
+
 
 ?>

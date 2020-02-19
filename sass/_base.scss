@@ -42,17 +42,21 @@ ul {
 }
 
 // Forms
-input {
+input, textarea {
   border: $border;
   border-radius: $border-radius;
   padding: 5px 10px;
   box-sizing: border-box;
 }
-input[type="submit"] {
+input[type="submit"]  {
   background: $color-bg-main;
   color: $color-text-invert;
   border: none;
   &:hover {
     background: darken($color-bg-main, 20%);
   }
+}
+
+textarea {
+  width: 100%;
 }

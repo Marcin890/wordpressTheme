@@ -1,0 +1,34 @@
+.comments-wrapper {
+   margin-top: $l-space;
+}
+.comments-header {
+   border-bottom: $border;
+   padding-bottom: $s-space;
+   margin-bottom: $m-space;
+}
+.comments-avatar {
+   float: left;
+   margin-right: $s-space;
+}
+
+.comments-meta {
+   margin-bottom: $s-space;
+}
+
+.comments-author {
+   font-weight: bold;
+   margin-bottom: $xs-space;
+}
+
+.comments-time {
+   float: right;
+   font-size: $font-size-xs;
+}
+
+.comments-answear {
+
+}
+
+.depth-2 {
+   margin-left: $s-space;
+}

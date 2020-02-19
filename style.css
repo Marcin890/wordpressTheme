@@ -9124,7 +9124,7 @@ ul {
   margin-left: 0;
 }
 
-input {
+input, textarea {
   border: 1px solid gainsboro;
   border-radius: 5px;
   padding: 5px 10px;
@@ -9140,6 +9140,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #5f6851;
+}
+
+textarea {
+  width: 100%;
 }
 
 a {
@@ -9444,14 +9448,50 @@ footer li a:hover {
 
 .error-code {
   text-align: center;
-  font-size: 4rem;
+  font-size: 80px;
 }
 
 .error-message {
   text-align: center;
+  margin-top: 40px;
+  font-size: 4rem;
 }
 
-.error- link {
+.error-link {
   text-align: center;
+  margin: 40px 0;
+}
+
+.comments-wrapper {
+  margin-top: 70px;
+}
+
+.comments-header {
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.comments-avatar {
+  float: left;
+  margin-right: 20px;
+}
+
+.comments-meta {
+  margin-bottom: 20px;
+}
+
+.comments-author {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comments-time {
+  float: right;
+  font-size: 1rem;
+}
+
+.depth-2 {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

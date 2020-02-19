@@ -27,6 +27,9 @@
                 <div class="author-wrapper">
                     <?php get_template_part('content/author') ?>
                 </div>
+                <div class="comments-wrapper">
+                    <?php comments_template(); ?>
+                </div>
             </div>
             <div class="col-md-3">
                 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
